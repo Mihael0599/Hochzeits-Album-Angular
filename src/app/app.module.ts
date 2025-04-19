@@ -12,7 +12,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { provideStorage, getStorage } from '@angular/fire/storage';
 import { HeaderComponent } from './Shared/header/header.component';
-import { Config } from './FirebaseConfig';
+import { Config } from './firebaseConfig';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatDialogModule } from '@angular/material/dialog';
 import { ImageDialogComponent } from './image-dialog/image-dialog.component';
