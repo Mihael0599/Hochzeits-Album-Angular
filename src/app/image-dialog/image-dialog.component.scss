@@ -1,0 +1,27 @@
+.dialog{
+    padding: 16px;
+    overflow: hidden;
+}
+
+button{
+    border: none;
+    background: unset;
+}
+.close-btn{
+    position: absolute;
+    top: 5px;
+    right: 0;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+}
+
+.mat-mdc-dialog-content{
+    height: 100%;
+    max-height: unset;
+    border-radius: 30px;
+}
+

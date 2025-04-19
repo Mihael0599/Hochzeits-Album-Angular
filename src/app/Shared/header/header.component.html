@@ -1,0 +1,26 @@
+<mat-drawer-container class="mat-draw-container" autosize>
+    <mat-drawer #drawer class="sidenav" [opened]="false" mode="side">
+<!--         <div>
+            <img class="logo" src="assets/img/logo.png" alt="">
+        </div> -->
+      <ul class="menu-items">
+        <li *ngIf="router.url === '/gallery'" routerLink="/" (click)="drawer.toggle()"><mat-icon>home</mat-icon>Upload Photo</li>
+        <li *ngIf="router.url === '/'" routerLink="/gallery" (click)="drawer.toggle()"><mat-icon>photo_library</mat-icon>Gallerie</li>
+        <li></li>
+        <li></li>
+      </ul>
+    </mat-drawer>
+  
+    <div class="example-sidenav-content">
+      <mat-toolbar color="primary">
+        <mat-toolbar-row>
+          <button (click)="drawer.toggle()" class="menu-icon">
+            <mat-icon>menu</mat-icon>
+          </button>
+        </mat-toolbar-row>
+      </mat-toolbar>
+      <div class="router-container">
+      <router-outlet></router-outlet>
+    </div>
+    </div>
+  </mat-drawer-container>

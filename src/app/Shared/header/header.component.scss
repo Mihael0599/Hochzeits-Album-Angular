@@ -1,0 +1,44 @@
+.mat-draw-container {
+    height: 100vh;
+}
+
+.menu-icon {
+    color: white;
+    cursor: pointer;
+}
+
+.sidenav{
+    width: 300px;
+}
+
+button{
+    background: none;
+    border: none;
+}
+
+.menu-items{
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    >li{
+        padding-left: 16px;
+        padding-right: 16px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        &:hover{
+            background-color: rgba(0,0,0, 0.04);
+        }
+        mat-icon{
+            margin-right: 16px;
+        }
+    }
+}
+
+.logo{
+    height: 64px;
+    width: 100%;
+    object-fit: cover;
+    padding-top: 0px;
+}

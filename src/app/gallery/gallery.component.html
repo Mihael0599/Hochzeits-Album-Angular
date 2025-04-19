@@ -1,0 +1,10 @@
+<div class="content">
+    <div class="gallery" *ngIf="!loading">
+        <div *ngFor="let url of imageUrls; let i = index;" (click)="openDialog(i)">
+            <img class="image" [src]="url" />
+        </div>
+    </div>
+    <div class="loading-spinner">
+        <mat-spinner *ngIf="loading" color="primary"></mat-spinner>
+    </div>
+</div>

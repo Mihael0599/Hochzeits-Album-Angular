@@ -1,0 +1,10 @@
+<div class="dialog">
+  <button class="close-btn" mat-button (click)="dialog.close()"><mat-icon>close</mat-icon></button>
+  <mat-dialog-content>
+    <img [src]="currentImage" class="full-image" alt="Bild" />
+  </mat-dialog-content>
+  <mat-dialog-actions>
+    <button mat-button (click)="prevImage()"><mat-icon>arrow_back</mat-icon></button>
+    <button mat-button (click)="nextImage()"><mat-icon>arrow_forward</mat-icon></button>
+  </mat-dialog-actions>
+</div>

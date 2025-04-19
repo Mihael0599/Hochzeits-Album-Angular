@@ -1,0 +1,14 @@
+<div class="content">
+    <div class="title">
+        <h1>Vjenčanje Tena i Mihael</h1>
+        <span>13.06.2025</span>
+    </div>
+    <div class="upload-btn-container">
+        <!-- <span>Ovjde možete svoje slike objaviti</span> -->
+        <label for="fileUpload" class="upload-button">Objavi slike</label>
+        <input type="file" id="fileUpload" (change)="uploadFiles($event)" multiple hidden>
+    </div>
+    <div class="loading-spinner">
+        <mat-spinner *ngIf="loading" color="primary"></mat-spinner>
+    </div>
+</div>

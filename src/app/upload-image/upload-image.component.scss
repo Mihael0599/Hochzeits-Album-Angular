@@ -1,0 +1,44 @@
+.content{
+    background-image: url('./../../assets/img/backgorund.jpg');
+    height: calc(100vh - 64px);
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 64px;
+    h1{
+        margin:  0;
+    }
+}
+
+.upload-btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.upload-button {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 12px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    user-select: none;
+    border: none;
+  }
+  
+  .upload-button:hover {
+    background-color: #333;
+  }
