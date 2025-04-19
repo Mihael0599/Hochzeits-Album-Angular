@@ -6,6 +6,9 @@
 button{
     border: none;
     background: unset;
+    &:hover{
+        cursor: pointer;
+    }
 }
 .close-btn{
     position: absolute;
@@ -23,5 +26,13 @@ img{
     height: 100%;
     max-height: unset;
     border-radius: 30px;
+}
+
+.buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
 }
 
