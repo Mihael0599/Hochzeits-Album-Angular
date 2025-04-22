@@ -1,7 +1,7 @@
 import { Component, Inject } from '@angular/core';
 import { MatDialogRef } from '@angular/material/dialog';
-import { Storage, ref, listAll, getDownloadURL } from '@angular/fire/storage';
-import { MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { MAT_DIALOG_DATA } from '@angular/material/dialog'
+import { getStorage, ref, getDownloadURL } from "firebase/storage";
 
 @Component({
   selector: 'app-image-dialog',
@@ -43,5 +43,20 @@ export class ImageDialogComponent {
 
   updateImage() {
     this.currentImage = this.urls[this.currentIndex];
+  }
+
+  async downloadImage() {
+    const fileUrl = this.currentImage;
+    const response = await fetch(fileUrl);
+    const blob = await response.blob();
+    const url = window.URL.createObjectURL(blob);
+    const imageName = this.currentImage.substring(this.currentImage.lastIndexOf('/') + 1).split('?')[0];
+    const link = document.createElement('a');
+    link.href = url;
+    link.setAttribute('download', imageName);
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    window.URL.revokeObjectURL(url);
   }
 }

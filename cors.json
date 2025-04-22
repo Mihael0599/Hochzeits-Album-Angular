@@ -1,0 +1,11 @@
+[
+  {
+    "origin": [
+      "http://localhost:4200",
+      "https://mihael-drazic.de/Hochzeit/"
+      ],
+    "responseHeader": ["Content-Type"],
+    "method": ["GET", "HEAD"],
+    "maxAgeSeconds": 3600
+  }
+]

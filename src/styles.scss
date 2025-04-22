@@ -5,10 +5,29 @@ body {
 
 body {
     margin: 0;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
 .loading-spinner {
     position: absolute;
     top: 50%;
+}
+
+@font-face {
+    font-family: 'Delius';
+    src: url('./assets/fonts/DeliusSwashCaps-Regular.ttf');
+}
+
+h1{
+    font-family: 'Delius' !important;
+    font-size: 32px !important;
+}
+span{
+    font-family: 'Delius';
+    font-size: 18px;
+}
+
+label{
+    font-family: 'Delius';
+    font-size: 18px;
+
 }
