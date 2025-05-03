@@ -29,10 +29,7 @@ export class GalleryComponent implements OnInit {
 
     this.loading = false;
   }
-  onNoClick(){
-
-  }
-
+  
   openDialog(index: number){
     this.dialog.open(ImageDialogComponent, {
       data: {

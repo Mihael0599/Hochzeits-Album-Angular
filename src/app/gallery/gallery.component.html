@@ -3,6 +3,7 @@
         <div *ngFor="let url of imageUrls; let i = index;" (click)="openDialog(i)">
             <img class="image" [src]="url" />
         </div>
+        <h1 *ngIf="imageUrls.length === 0">Galerija je trenutno prazna</h1>
     </div>
     <div class="loading-spinner">
         <mat-spinner *ngIf="loading" color="primary"></mat-spinner>

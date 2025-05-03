@@ -2,7 +2,7 @@
     background-image: url('./../../assets/img/backgorund.jpg');
     width: 100%;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,11 +11,13 @@
 
 .gallery {
     display: flex;
+    height: 100vh;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 16px;
     padding-top: 32px;
+    padding-bottom: 64px;
 }
 
 .image{
@@ -24,4 +26,8 @@
     object-fit: cover;
     border-radius: 30px;
     /* background-size: cover; */
+}
+
+h1{
+    text-align: center;
 }
